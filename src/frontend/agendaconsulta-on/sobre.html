@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre | Agendamento de Consulta Municipal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/@heroicons/react@2.0.18/outline/esm/index.js" rel="stylesheet">
+
+
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-green-600 text-white py-4 shadow-lg">
+        <!-- Contêiner principal -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="../imagens/logo.png" alt="Prefeitura Municipal" class="h-16">
+                </div>
+
+                <!-- Navegação para Desktop -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="agendasaude.html" class="flex items-center hover:text-green-200">
+                        <i class="fas fa-home mr-2"></i> Home
+                    </a>
+                    <a href="sobre.html" class="flex items-center hover:text-green-200">
+                        <i class="fas fa-info-circle mr-2"></i> Sobre
+                    </a>
+                    <a href="#" class="flex items-center hover:text-green-200">
+                        <i class="fas fa-envelope mr-2"></i> Contato
+                    </a>
+                </nav>
+
+                <!-- Botão do Menu Móvel -->
+                <button class="md:hidden text-white" onclick="toggleMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Móvel -->
+            <div id="mobileMenu" class="md:hidden hidden space-y-4 mt-4">
+                <a href="#" class="flex items-center hover:text-green-200">
+                    <i class="fas fa-home mr-2"></i> Home
+                </a>
+                <a href="#" class="flex items-center hover:text-green-200">
+                    <i class="fas fa-info-circle mr-2"></i> Sobre
+                </a>
+                <a href="#" class="flex items-center hover:text-green-200">
+                    <i class="fas fa-envelope mr-2"></i> Contato
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-4xl mx-auto py-12 px-6 text-gray-700">
+        <section class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-black-600 mb-4">Sobre - Agendamento de Consultas - Santo Antônio dos
+                Lopes</h1>
+            <p class="text-lg">
+                O sistema de agendamento de consultas facilita o acesso da população aos serviços de saúde, permitindo
+                que você marque sua consulta de forma rápida e prática.
+            </p>
+        </section>
+
+        <section class="mb-10">
+            <h2 class="text-2xl font-semibold text-green-600 mb-2">Como Funciona</h2>
+            <p class="mb-4">
+                O agendamento de consultas municipais permite que você escolha a especialidade médica e a data desejada,
+                tudo online. Confira o passo a passo:
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+                <li>
+                    <strong>1. Escolha a Especialidade:</strong> Selecione a especialidade médica desejada, como clínica
+                    geral, pediatria ou odontologia.
+                </li>
+                <li>
+                    <strong>2. Selecione a Data e o Horário:</strong> Encontre o horário mais conveniente para você
+                    entre as opções disponíveis.
+                </li>
+                <li>
+                    <strong>3. Confirme seus Dados:</strong> Preencha com seus dados pessoais para confirmação e
+                    contato.
+                </li>
+                <li>
+                    <strong>4. Receba a Confirmação:</strong> Você receberá a confirmação do seu agendamento por e-mail
+                    ou SMS, com todos os detalhes.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold text-green-600 mb-2">Vantagens do Agendamento Online</h2>
+            <p class="mb-4">
+                Com o agendamento online, você evita filas e economiza tempo, garantindo atendimento com mais agilidade
+                e praticidade. Além disso, você pode acompanhar suas consultas e remarcá-las caso necessário.
+            </p>
+            <p>
+                Estamos comprometidos em oferecer um serviço de saúde acessível e eficiente para todos os cidadãos de
+                Santo Antônio dos Lopes.
+            </p>
+        </section>
+    </main>
+
+
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div
+            class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+
+            <p class="text-sm">
+                Prefeitura Municipal de Santo Antonio dos Lopes <br>
+                &copy; 2024 Desenvolvido por
+                <a href="https://logicflow.com" class="font-bold hover:text-green-600">
+                    Logic Flow
+                </a>.
+                Todos os direitos reservados.
+            </p>
+
+            <nav class="flex space-x-6">
+                <a href="#" class="flex items-center hover:text-green-200">
+                    <svg class="h-5 w-5 mr-1 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <!-- Ícone de privacidade (substitua pelo ícone desejado) -->
+                        <path
+                            d="M12 2C8.69 2 6 4.69 6 8v4.5L4.5 14v1h15v-1l-1.5-1.5V8c0-3.31-2.69-6-6-6zm0 18c-1.1 0-2-.9-2-2h4c0 1.1-.9 2-2 2zm-6-5h12v-5.5c0-2.48-2.02-4.5-4.5-4.5S7 7.52 7 10v5z" />
+                    </svg>
+                    Política de Privacidade
+                </a>
+                <a href="#" class="flex items-center hover:text-green-200">
+                    <svg class="h-5 w-5 mr-1 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <!-- Ícone de termos de uso -->
+                        <path
+                            d="M6 2c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6H6zm7 7V3.5L18.5 9H13zm-1 9h-2v-2h2v2zm0-4h-2v-4h2v4z" />
+                    </svg>
+                    Termos de Uso
+                </a>
+                <a href="#" class="flex items-center hover:text-green-200">
+                    <i class="fas fa-envelope mr-2"></i> Contato
+                </a>
+            </nav>
+
+        </div>
+    </footer>
+
+    <script src="js/interação.js"></script>
+</body>
+
+</html>

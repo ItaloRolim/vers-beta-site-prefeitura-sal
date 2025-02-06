@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Municipal Santo Antônio dos Lopes</title>
+    <link rel="shortcut icon" href="../imagens/favicon-sal.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/tema.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <!-- Logo -->
+                <div class="flex items-center flex-shrink-0 px-4">
+                    <img src="../imagens/logo.png" alt="Prefeitura Municipal" class="h-20 w-auto object-contain">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="../home/index.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-home w-5 mr-1 text-black"></i> Início</a></li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../prefeitura/prefeito/prefeito.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Prefeita
+                                    e Vice</a>
+                                <a href="../prefeitura/secretarias/secretarias.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Secretarias</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-city w-5 mr-1 text-black"></i>Município
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../municipio/cidade/cidade.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Cidade</a>
+                                <a href="../municipio/obras/obras.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Obras</a>
+                                <a href="../municipio/veiculos/veiculos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Veículos</a>
+                                <a href="../municipio/simbolos/simbolos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Símbolos</a>
+                                <a href="../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Dados
+                                    do Município</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Contra
+                                    Cheque Online</a>
+                                <a href="../diariooficial/diario.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Diário
+                                    Eletrônico</a>
+                                <a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Nota
+                                    Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+
+                        <li><a href="../diariooficial/diario.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+
+                        <li><a href="../porta-transparencia/transparencia.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+
+                        <li><a href="../e-sic/e-sic.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                        <li><a href="../ouvidoria/ouvidoria.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                        <li><a href="/site-santo-antonio-dos-lopes/pesquisa"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                        <li>
+                        <li>
+                            <button id="theme-toggle"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i id="theme-icon" class="fas fa-sun w-5 mr-1 text-black"></i>
+                                Tema
+                            </button>
+                        </li>
+
+                        <!-- Botão Acessibilidade -->
+                        <li>
+                            <div id="accessibility-icon" class="fixed top-80 right-1 z-50">
+                                <button id="toggleAccessibilityMenu"
+                                    class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                    ♿
+                                </button>
+                            </div>
+                        </li>
+
+                        <div id="accessibility-menu"
+                            class="fixed top-4 right-4 bg-white p-4 shadow-lg rounded-lg z-40 hidden transition-transform transform">
+                            <div class="space-y-2">
+                                <button onclick="aumentarFonte()"
+                                    class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 4v16m8-8H4" />
+                                    </svg>
+                                    Aumentar Fonte
+                                </button>
+                                <button onclick="diminuirFonte()"
+                                    class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M20 12H4" />
+                                    </svg>
+                                    Diminuir Fonte
+                                </button>
+                                <button onclick="toggleContraste()"
+                                    class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                    </svg>
+                                    Alto Contraste
+                                </button>
+                                <button onclick="toggleDestaqueLinks()"
+                                    class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                                    </svg>
+                                    Destacar Links
+                                </button>
+                                <button onclick="toggleLeituraAutomatica()"
+                                    class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                    </svg>
+                                    Leitura Automática
+                                </button>
+                            </div>
+                        </div>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-black focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-black"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+            <div class="p-4">
+                <div class="flex justify-between items-center mb-4">
+                    <button id="close-menu" class="text-black focus:outline-none">
+                        <i class="fas fa-times text-2xl text-black"></i>
+                    </button>
+                    <button id="mobile-toggleAccessibilityMenu"
+                        class="bg-blue-600 text-white p-2 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        ♿
+                    </button>
+                </div>
+
+                <div id="mobile-accessibility-menu" class="space-y-2 mb-4 hidden">
+                    <button onclick="aumentarFonte()"
+                        class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                        </svg>
+                        Aumentar Fonte
+                    </button>
+                    <button onclick="diminuirFonte()"
+                        class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                        </svg>
+                        Diminuir Fonte
+                    </button>
+                    <button onclick="toggleContraste()"
+                        class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                        Alto Contraste
+                    </button>
+                    <button onclick="toggleDestaqueLinks()"
+                        class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
+                        </svg>
+                        Destacar Links
+                    </button>
+                    <button onclick="toggleLeituraAutomatica()"
+                        class="flex items-center w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                        </svg>
+                        Leitura Automática
+                    </button>
+                </div>
+
+                <ul class="space-y-2">
+                    <li><a href="../home/index.html" class="text-black block py-2"><i
+                                class="fas fa-home w-5 mr-1 text-black"></i> Início</a></li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../prefeitura/prefeito/prefeito.html" class="text-black block py-2">Prefeita e
+                                    Vice</a></li>
+                            <li><a href="../prefeitura/secretarias/secretarias.html"
+                                    class="text-black block py-2">Secretarias</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-city w-5 mr-1 text-black"></i>Município</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../municipio/cidade/cidade.html" class="text-black block py-2">A Cidade</a>
+                            </li>
+                            <li><a href="../municipio/obras/obras.html" class="text-black block py-2">Obras</a></li>
+                            <li><a href="../municipio/veiculos/veiculos.html" class="text-black block py-2">Veículos</a>
+                            </li>
+                            <li><a href="../municipio/simbolos/simbolos.html" class="text-black block py-2">Símbolos</a>
+                            </li>
+                            <li><a href="../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="text-black block py-2">Dados do Município</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank" class="text-black block py-2">Contra Cheque Online</a></li>
+                            <li><a href="../diariooficial/diario.html" class="text-black block py-2">Diário
+                                    Eletrônico</a></li>
+                            <li><a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank" class="text-black block py-2">Nota Fiscal Eletrônica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../diariooficial/diario.html" class="text-black block py-2"><i
+                                class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+                    <li><a href="../porta-transparencia/transparencia.html" class="text-black block py-2"><i
+                                class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+                    <li><a href="../e-sic/e-sic.html" class="text-black block py-2"><i
+                                class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                    <li><a href="../ouvidoria/ouvidoria.html" class="text-black block py-2"><i
+                                class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/pesquisa" class="text-black block py-2"><i
+                                class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                    <li>
+                        <button id="theme-toggle-mobile">
+                            <i id="theme-icon-mobile" class="fa fa-sun"></i> Tema
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+        <!-- Instruções acima do formulário -->
+        <div class="bg-pink-50 border-l-4 border-pink-500 p-6 rounded-lg shadow-md max-w-4xl mx-auto">
+            <h2 class="text-xl font-semibold text-black">Antes de começar, algumas informações importantes:</h2>
+            <ul class="list-disc list-inside text-gray-700 mt-3 space-y-2">
+                <li>Todos os campos são obrigatórios, garanta que suas informações estão corretas.</li>
+                <li>O processo é simples e rápido, leva apenas alguns minutos.</li>
+                <li>Seus dados serão tratados com segurança e sigilo.</li>
+                <li>Após o envio, você receberá um e-mail de acompanhamento da sua manifestação.</li>
+            </ul>
+            <p class="mt-4 text-gray-600">Se precisar de ajuda, entre em contato com nossa central de atendimento.</p>
+        </div>
+
+        <!-- Formulário -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden mb-8">
+            <form action="https://formspree.io/f/mqaeqryb" method="POST"
+                class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <!-- Cabeçalho com gradiente moderno -->
+                <div class="bg-gradient-to-r from-pink-500 to-pink-600 p-8 text-center">
+                    <h2 class="text-3xl font-bold text-white mb-2">Formulário de Manifestação</h2>
+                    <p class="text-blue-100">Todos campos são obrigatórios</p>
+                </div>
+
+                <!-- Container principal com padding uniforme -->
+                <div class="p-8 space-y-8">
+                    <!-- Dados Pessoais -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-gray-800 pb-2 border-b border-gray-200">
+                            Dados Pessoais
+                        </h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Nome Completo *</label>
+                                <input type="text" name="nome" required minlength="3"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="Digite seu nome completo">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">E-mail *</label>
+                                <input type="email" name="email" required
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="seu.email@exemplo.com">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">CPF *</label>
+                                <input type="text" name="cpf" required maxlength="11" pattern="\d{11}"
+                                    oninput="this.value = this.value.replace(/\D/g, '')"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="00000000000">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Telefone *</label>
+                                <input type="tel" name="telefone" required maxlength="11" pattern="\d{10,11}"
+                                    oninput="this.value = this.value.replace(/\D/g, '')"
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="00000000000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Informações Complementares -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-gray-800 pb-2 border-b border-gray-200">
+                            Informações Complementares
+                        </h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Data de Nascimento *</label>
+                                <input type="date" name="data_nascimento" required
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Faixa Etária *</label>
+                                <select name="faixa_etaria" required
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 bg-white">
+                                    <option value="">Selecione sua faixa etária</option>
+                                    <option value="18-25">18 a 25 anos</option>
+                                    <option value="26-35">26 a 35 anos</option>
+                                    <option value="36-45">36 a 45 anos</option>
+                                    <option value="46-55">46 a 55 anos</option>
+                                    <option value="56-70">56 a 70 anos</option>
+                                    <option value="acima-70">Acima de 70 anos</option>
+                                </select>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Cidade/UF *</label>
+                                <input type="text" name="cidade_uf" required
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="Ex: Santo Antônio dos Lopes/MA">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-sm font-medium text-gray-700">Bairro *</label>
+                                <input type="text" name="bairro" required
+                                    class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200"
+                                    placeholder="Digite seu bairro">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Manifestação -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-gray-800 pb-2 border-b border-gray-200">
+                            Sua Manifestação
+                        </h3>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-700">Tipo de Manifestação *</label>
+                            <select name="tipo_manifestacao" required
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 bg-white">
+                                <option value="">Selecione o tipo de manifestação</option>
+                                <option value="denuncia">Denúncia</option>
+                                <option value="reclamacao">Reclamação</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="elogio">Elogio</option>
+                                <option value="solicitacao">Solicitação de Informação</option>
+                            </select>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-gray-700">Descrição da Manifestação *</label>
+                            <div class="bg-blue-50 p-4 rounded-lg text-sm text-blue-800 mb-2">
+                                Descreva sua manifestação de forma clara e objetiva. Quanto mais detalhes você
+                                fornecer, melhor poderemos atendê-lo.
+                            </div>
+                            <textarea name="descricao" required rows="5" minlength="10"
+                                class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-200 resize-y"
+                                placeholder="Descreva sua manifestação aqui..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="pt-6 flex gap-4 flex-wrap">
+                        <button type="submit"
+                            class="px-8 py-3 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-medium rounded-lg hover:opacity-90 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200">
+                            Enviar Manifestação
+                        </button>
+                        <button type="reset"
+                            class="px-8 py-3 bg-gradient-to-r from-gray-500 to-gray-600 text-white font-medium rounded-lg hover:opacity-90 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition duration-200">
+                            Limpar Formulário
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Informações Adicionais -->
+            <div class="max-w-4xl mx-auto mt-8 p-4 bg-gray-50 rounded-lg text-sm text-gray-600">
+                <p>Após o envio, você receberá um e-mail de acompanhamento da sua manifestação.</p>
+                <p>Em caso de dúvidas, entre em contato com nossa central de atendimento.</p>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        // Validação e formatação de CPF
+        document.querySelector('input[name="cpf"]').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) value = value.slice(0, 11);
+            e.target.value = value;
+        });
+
+        // Validação e formatação de telefone
+        document.querySelector('input[name="telefone"]').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 11) value = value.slice(0, 11);
+            e.target.value = value;
+        });
+
+        // Validação da data de nascimento
+        // Pega o input de data
+        const dateInput = document.querySelector('input[name="data_nascimento"]');
+
+        // Define a data máxima como hoje
+        const today = new Date();
+        const dd = String(today.getDate()).padStart(2, '0');
+        const mm = String(today.getMonth() + 1).padStart(2, '0'); // Janeiro é 0!
+        const yyyy = today.getFullYear();
+        const maxDate = `${yyyy}-${mm}-${dd}`;
+
+        // Configura o input
+        dateInput.setAttribute('type', 'date');
+        dateInput.setAttribute('max', maxDate);
+        dateInput.setAttribute('pattern', '\d{4}-\d{2}-\d{2}');
+
+        // Define o valor inicial como primeiro dia do ano 2000
+        dateInput.value = '2000-01-01';
+
+        // Adiciona evento de validação
+        dateInput.addEventListener('change', function (e) {
+            const selectedDate = new Date(e.target.value);
+            const now = new Date();
+
+            // Remove a hora/minuto/segundo para comparação apenas da data
+            now.setHours(0, 0, 0, 0);
+            selectedDate.setHours(0, 0, 0, 0);
+
+            if (selectedDate > now) {
+                // Mostra mensagem mais amigável
+                const message = 'Por favor, selecione uma data no passado ou hoje';
+                this.setCustomValidity(message);
+                this.reportValidity();
+                this.value = '';
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+
+        // Adiciona estilos para melhorar a aparência (opcional)
+        dateInput.style.padding = '8px';
+        dateInput.style.borderRadius = '4px';
+        dateInput.style.border = '1px solid #ccc';
+    </script>
+
+
+    <footer class="bg-gray-800 text-white mt-16 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div>
+                <img src="../imagens/logo.png" alt="Prefeitura Municipal" class="h-14 mb-6">
+                <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2 flex-shrink-0"></i> Rua
+                    Principal, 123</p>
+                <p class="flex items-center mb-2"><i class="fas fa-phone mr-2 flex-shrink-0"></i> (00) 1234-5678</p>
+                <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2 flex-shrink-0"></i>
+                    contato@prefeitura.gov.br</p>
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-primary hover:bg-primary/80 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 576 512">
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="mt-4 text-sm">
+                    © 2024 Prefeitura Municipal de Santo Antonio dos Lopes.
+                    Todos os Direitos Reservados.
+                    <br> Desenvolvido por <a href="https://logicflow.com.br" target="_blank"
+                        class="text-primary hover:text-primary/80 transition duration-300 ease-in-out">Logic Flow</a>
+                </p>
+            </div>
+            <div>
+                <h3
+                    class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">
+                    Links Úteis</h3>
+                <ul class="space-y-2">
+                    <li><a href="/site-santo-antonio-dos-lopes/transparencia"
+                            class="hover:text-primary transition duration-300 ease-in-out">Portal da Transparência</a>
+                    </li>
+                    <li><a href="/site-santo-antonio-dos-lopes/diario-oficial"
+                            class="hover:text-primary transition duration-300 ease-in-out">Diário Oficial</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/licitacoes"
+                            class="hover:text-primary transition duration-300 ease-in-out">Licitações</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/concursos"
+                            class="hover:text-primary transition duration-300 ease-in-out">Concursos</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/ouvidoria/ouvidoria.html"
+                            class="hover:text-primary transition duration-300 ease-in-out">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3
+                    class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-primary">
+                    Horário de Atendimento</h3>
+                <p class="mb-2">Segunda a Sexta</p>
+                <p class="mb-2">08:00 às 17:00</p>
+                <p class="mb-4">Exceto feriados</p>
+                <a href="/site-santo-antonio-dos-lopes/contato"
+                    class="inline-block bg-primary text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-primary/80">Fale
+                    Conosco</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Remove active state from all tabs
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            tabButtons.forEach(button => {
+                button.classList.remove('border-pink-600', 'text-pink-600');
+                button.classList.add('border-transparent', 'text-gray-500');
+            });
+
+            // Show selected tab content
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.classList.remove('hidden');
+
+            // Add active state to selected tab
+            const activeButton = document.querySelector(`[data-tab="${tabId}"]`);
+            activeButton.classList.remove('border-transparent', 'text-gray-500');
+            activeButton.classList.add('border-pink-600', 'text-pink-600');
+        }
+
+        // Initialize first tab as active
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('info');
+        });
+    </script>
+
+    <script src="../js/menu.js"></script>
+    <script src="../tailwind.config.js"></script>
+    <script src="../js/botaoassecibilade.js"></script>
+    <script src="../js/funçao-assibiliadade-mobile.js"></script>
+    <script src="../js/pesquisar.js"></script>
+    <script src="../js/tema.js"></script>
+
+</body>
+
+</html>

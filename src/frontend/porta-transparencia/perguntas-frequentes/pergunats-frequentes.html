@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Municipal Santo Antônio dos Lopes</title>
+    <link rel="shortcut icon" href="../../imagens/favicon-sal.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <!-- Logo -->
+                <div class="flex items-center flex-shrink-0 px-4">
+                    <img src="../../imagens/logo.png" alt="Prefeitura Municipal" class="h-20 w-auto object-contain">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="../../home/index.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-home w-5 mr-1 text-black"></i> Início</a></li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../../prefeitura/prefeito/prefeito.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Prefeita
+                                    e Vice</a>
+                                <a href="../../prefeitura/secretarias/secretarias.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Secretarias</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-city w-5 mr-1 text-black"></i>Município
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../../municipio/cidade/cidade.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Cidade</a>
+                                <a href="../../municipio/obras/obras.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Obras</a>
+                                <a href="../../municipio/veiculos/veiculos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Veículos</a>
+                                <a href="../../municipio/simbolos/simbolos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Símbolos</a>
+                                <a href="../../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Dados
+                                    do Município</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Contra
+                                    Cheque Online</a>
+                                <a href="../../diariooficial/diario.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Diário
+                                    Eletrônico</a>
+                                <a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Nota
+                                    Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+
+                        <li><a href="../../diariooficial/diario.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+
+                        <li><a href="../../porta-transparencia/transparencia.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+
+                        <li><a href="../../e-sic/e-sic.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                        <li><a href="../../ouvidoria/ouvidoria.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                        <li><a href="/site-santo-antonio-dos-lopes/pesquisa"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-black focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-black"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none mb-4">
+                    <i class="fas fa-times text-2xl text-black"></i>
+                </button>
+                <ul class="space-y-2">
+                    <li><a href="../../home/index.html" class="text-black block py-2"><i
+                                class="fas fa-home w-5 mr-1 text-black"></i>
+                            Início</a></li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../../prefeitura/prefeito/prefeito.html" class="text-black block py-2">Prefeita
+                                    e
+                                    Vice</a></li>
+                            <li><a href="../../prefeitura/secretarias/secretarias.html"
+                                    class="text-black block py-2">Secretarias</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-city w-5 mr-1 text-black"></i>Município</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../../municipio/cidade/cidade.html" class="text-black block py-2">A Cidade</a>
+                            </li>
+                            <li><a href="../../municipio/obras/obras.html" class="text-black block py-2">Obras</a></li>
+                            <li><a href="../../municipio/veiculos/veiculos.html"
+                                    class="text-black block py-2">Veículos</a>
+                            </li>
+                            <li><a href="../../municipio/simbolos/simbolos.html"
+                                    class="text-black block py-2">Símbolos</a>
+                            </li>
+                            <li><a href="../../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="text-black block py-2">Dados do Município</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank" class="text-black block py-2">Contra Cheque Online</a></li>
+                            <li><a href="../diariooficial/diario.html" class="text-black block py-2">Diário
+                                    Eletrônico</a></li>
+                            <li><a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank" class="text-black block py-2">Nota Fiscal Eletrônica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../diariooficial/diario.html" class="text-black block py-2"><i
+                                class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+                    <li><a href="../../porta-transparencia/transparencia.html" class="text-black block py-2"><i
+                                class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+                    <li><a href="../../e-sic/e-sic.html" class="text-black block py-2"><i
+                                class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                    <li><a href="../../ouvidoria/ouvidoria.html" class="text-black block py-2"><i
+                                class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/pesquisa" class="text-black block py-2"><i
+                                class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <body class="bg-gray-50">
+        <main class="container mx-auto px-4 py-8 min-h-screen max-w-5xl">
+            <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mb-8">
+                    <div class="space-y-3">
+                        <h1
+                            class="text-3xl font-extrabold  bg-clip-text text-black tracking-wide text-center uppercase p-8">
+                            Perguntas frequentes
+                        </h1>
+                        <p class="text-gray-600 text-lg bg-gray-200">
+                            Acesse as perguntas mais frequentes disponíveis
+                        </p>
+                    </div>
+
+                    <div class="w-full lg:w-96">
+                        <div class="relative">
+                            <input type="text" placeholder="Buscar pergunta..."
+                                class="w-full p-4 pl-12 rounded-xl border-2 border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all duration-200">
+                            <svg class="w-6 h-6 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <details
+                        class="group bg-white rounded-xl border-2 border-gray-100 hover:border-blue-100 transition-all duration-200">
+                        <summary class="p-6 cursor-pointer list-none flex justify-between items-center">
+                            <span class="font-medium text-lg text-gray-800">Como emitir IPTU?</span>
+                            <svg class="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            Para emitir o IPTU, acesse a área de Tributos no site, insira o número do cadastro do imóvel
+                            ou CPF do proprietário, e selecione o ano desejado. O boleto será gerado automaticamente
+                            para impressão.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white rounded-xl border-2 border-gray-100 hover:border-blue-100 transition-all duration-200">
+                        <summary class="p-6 cursor-pointer list-none flex justify-between items-center">
+                            <span class="font-medium text-lg text-gray-800">Qual horário de funcionamento da
+                                prefeitura?</span>
+                            <svg class="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            A Prefeitura funciona de segunda a sexta-feira, das 8h às 14h, exceto em feriados municipais
+                            e nacionais.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white rounded-xl border-2 border-gray-100 hover:border-blue-100 transition-all duration-200">
+                        <summary class="p-6 cursor-pointer list-none flex justify-between items-center">
+                            <span class="font-medium text-lg text-gray-800">Como solicitar certidão negativa de
+                                débitos?</span>
+                            <svg class="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            A certidão pode ser solicitada online através do portal da prefeitura. Insira seu CPF/CNPJ,
+                            aguarde a validação e faça o download do documento. A certidão tem validade de 90 dias.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white rounded-xl border-2 border-gray-100 hover:border-blue-100 transition-all duration-200">
+                        <summary class="p-6 cursor-pointer list-none flex justify-between items-center">
+                            <span class="font-medium text-lg text-gray-800">Como agendar atendimento na
+                                prefeitura?</span>
+                            <svg class="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            O agendamento pode ser feito pelo telefone (99) XXXX-XXXX ou pelo site na seção "Agendamento
+                            Online". Escolha o serviço desejado e selecione data e horário disponíveis.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white rounded-xl border-2 border-gray-100 hover:border-blue-100 transition-all duration-200">
+                        <summary class="p-6 cursor-pointer list-none flex justify-between items-center">
+                            <span class="font-medium text-lg text-gray-800">Como obter alvará de funcionamento?</span>
+                            <svg class="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            Para obter o alvará, reúna a documentação necessária (CNPJ, contrato social, documentos
+                            pessoais), faça o requerimento online ou presencial e aguarde a vistoria. Após aprovação, o
+                            alvará será emitido em até 5 dias úteis.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white rounded-xl border-2 border-gray-100 hover:border-blue-100 transition-all duration-200">
+                        <summary class="p-6 cursor-pointer list-none flex justify-between items-center">
+                            <span class="font-medium text-lg text-gray-800">Como fazer denúncia de
+                                irregularidades?</span>
+                            <svg class="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            Denúncias podem ser feitas de forma anônima através do portal da Ouvidoria, pelo telefone
+                            0800-XXX-XXXX ou presencialmente na sede da prefeitura. Todas as denúncias são investigadas
+                            com sigilo.
+                        </div>
+                    </details>
+
+                    <details
+                        class="group bg-white rounded-xl border-2 border-gray-100 hover:border-blue-100 transition-all duration-200">
+                        <summary class="p-6 cursor-pointer list-none flex justify-between items-center">
+                            <span class="font-medium text-lg text-gray-800">Como participar de licitações?</span>
+                            <svg class="w-6 h-6 text-gray-400 group-open:rotate-180 transition-transform duration-200"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <div class="px-6 pb-6 text-gray-600">
+                            Para participar de licitações, cadastre-se no portal de Compras da prefeitura, mantenha a
+                            documentação atualizada e acompanhe o calendário de licitações. Os editais podem ser
+                            baixados gratuitamente no site.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-black mt-16 py-12" style="background-color: #FF69B4;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div>
+                    <img src="../../imagens/logo.png" alt="Prefeitura Municipal" class="h-14 mb-6">
+                    <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2 flex-shrink-0"></i> Rua
+                        Principal, 123</p>
+                    <p class="flex items-center mb-2"><i class="fas fa-phone mr-2 flex-shrink-0"></i> (00) 1234-5678</p>
+                    <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2 flex-shrink-0"></i>
+                        contato@prefeitura.gov.br</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/prefeiturasal/?__pwa=1" target="_blank"
+                            class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                            <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg>
+                        </a>
+    
+                        <a href="#"
+                            class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                            <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                            <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm">
+                        © 2025 Prefeitura Municipal de Santo Antonio dos Lopes.
+                        Todos os Direitos Reservados.
+                    </p>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-green-600">
+                        Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../../porta-transparencia/transparencia.html"
+                                class="hover:text-yellow-500 transition duration-300 ease-in-out">Portal da
+                                Transparência</a>
+                        </li>
+                        <li><a href="../../diariooficial/diario.html"
+                                class="hover:text-yellow-500 transition duration-300 ease-in-out">Diário Oficial</a></li>
+                        <li><a href="../../portal-licitações/avisos-licitações.html"
+                                class="hover:text-yellow-500 transition duration-300 ease-in-out">Licitações</a></li>
+                        <li><a href="../../ouvidoria/ouvidoria.html"
+                                class="hover:text-yellow-500 transition duration-300 ease-in-out">Ouvidoria</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3
+                        class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-green-600">
+                        Horário de Atendimento</h3>
+                    <p class="mb-2">Segunda a Sexta</p>
+                    <p class="mb-2">08:00 às 17:00</p>
+                    <p class="mb-4">Exceto feriados</p>
+                    <a href="../ouvidoria/ouvidoria.html"
+                        class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-yellow-500">Fale
+                        Conosco</a>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="../../js/menu.js"></script>
+        <script src="../../tailwind.config.js"></script>
+        <script src="../../js/"></script>
+
+
+    </body>
+
+</html>

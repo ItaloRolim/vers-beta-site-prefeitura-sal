@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportunidades Santo Antônio dos Lopes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+    <!-- Mobile-friendly Navbar -->
+    <header class="sticky top-0 z-50 bg-blue-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-xl md:text-2xl font-bold">Oportunidades Avança Sal </h1>
+            </div>
+            <nav class="hidden md:flex space-x-4">
+                <a href="#vagas" class="hover:text-blue-200 transition">Vagas</a>
+                <a href="#empresas" class="hover:text-blue-200 transition">Empresas</a>
+                <a href="#contato" class="hover:text-blue-200 transition">Contato</a>
+            </nav>
+            <button id="mobile-menu-toggle" class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden bg-blue-700 py-4">
+            <nav class="flex flex-col items-center space-y-3">
+                <a href="#vagas" class="hover:text-blue-200 transition">Vagas</a>
+                <a href="#empresas" class="hover:text-blue-200 transition">Empresas</a>
+                <a href="#contato" class="hover:text-blue-200 transition">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Dynamic Background -->
+    <section class="relative bg-gradient-to-r from-blue-500 to-blue-700 text-white py-20 px-4">
+        <div class="container mx-auto text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 animate-fade-in">Encontre a Sua Próxima Oportunidade</h2>
+            <p class="text-lg md:text-xl mb-6 opacity-80">Conectando talentos locais com empresas promissoras</p>
+            <div class="space-x-4">
+                <a href="#vagas" class="bg-white text-blue-600 px-6 py-3 rounded-full hover:bg-blue-50 transition">
+                    Ver Vagas Disponíveis
+                </a>
+                <a href="#cadastro"
+                    class="border-2 border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition">
+                    Cadastrar Seu E-mail
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings with Search and Filter -->
+    <section id="vagas" class="container mx-auto my-12 px-4">
+        <div class="section-header mb-8 flex flex-col md:flex-row justify-between items-center">
+            <h2 class="section-title text-3xl font-bold mb-4 md:mb-0">Vagas Recentes</h2>
+            <div class="search-filter-container flex space-x-4">
+                <input 
+                    type="text" 
+                    id="job-search-input" 
+                    placeholder="Pesquisar vagas..." 
+                    class="search-input px-4 py-2 border border-black rounded-lg w-full md:w-64">
+                <select 
+                    id="job-category-filter" 
+                    class="filter-select px-4 py-2 border rounded-lg">
+                    <option value="">Todos os Setores</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="saude">Saúde</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Job Listings -->
+        <div id="job-listings" class="grid gap-6 grid-cols-1 md:grid-cols-3">
+            <!-- Cards dynamically populated -->
+        </div>
+    </section>
+
+
+    <!-- Companies Section -->
+    <section id="empresas" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Empresas Parceiras</h2>
+            <div class="flex flex-wrap justify-center items-center space-x-8 space-y-4">
+                <img src="https://via.placeholder.com/150" alt="Empresa 1"
+                    class="rounded-full w-24 h-24 hover:scale-110 transition">
+                <img src="https://via.placeholder.com/150" alt="Empresa 2"
+                    class="rounded-full w-24 h-24 hover:scale-110 transition">
+                <img src="https://via.placeholder.com/150" alt="Empresa 3"
+                    class="rounded-full w-24 h-24 hover:scale-110 transition">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form with Validation -->
+    <section id="cadastro" class="container mx-auto my-16 px-4">
+        <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl font-bold text-center mb-8">Cadastre-se</h2>
+            <p class="text-center text-gray-700 mb-4">
+                Insira seu nome e e-mail para receber avisos de vagas diretamente na sua caixa de entrada.
+            </p>
+            <form id="cadastro-form" class="space-y-4">
+                <div>
+                    <label for="nome" class="block mb-2 text-gray-700">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required
+                        class="w-full px-4 py-2 border border-black rounded-lg hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label for="email" class="block mb-2 text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-2 border border-black rounded-lg hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                </div>
+                
+                <button type="submit"
+                    class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+                    Cadastrar
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-white">Sobre Nós</h3>
+                <p>Plataforma de vagas dedicada a fortalecer o mercado de trabalho em Santo Antônio dos Lopes.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-white">Links Rápidos</h3>
+                <nav class="space-y-2">
+                    <a href="#vagas" class="block hover:text-blue-300">Vagas</a>
+                    <a href="#empresas" class="block hover:text-blue-300">Empresas Parceiras</a>
+                    <a href="#contato" class="block hover:text-blue-300">Contato</a>
+                </nav>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-white">Contato</h3>
+                <p>Email: contato@prefeitura.santoantonio.gov.br</p>
+                <p>Telefone: (99) 3333-3333</p>
+            </div>
+        </div>
+        <div class="text-center mt-8 border-t border-gray-800 pt-6">
+            <p>&copy; 2024 Prefeitura de Santo Antônio. Desenvolvido por Logic Flow.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Job Listings Data with More Details
+        const jobListings = [
+            {
+                id: "frontend-dev",
+                title: "Desenvolvedor Front-End",
+                company: "Logic Flow",
+                location: "Santo Antônio",
+                sector: "tecnologia",
+                description: "Estamos procurando um desenvolvedor Front-End criativo para nossa equipe. Você será responsável por criar interfaces modernas e responsivas.",
+                requirements: [
+                    "Experiência com React e JavaScript",
+                    "Conhecimento em HTML5 e CSS3",
+                    "Familiaridade com metodologias ágeis"
+                ],
+                benefits: [
+                    "Salário competitivo",
+                    "Plano de saúde",
+                    "Home office parcial"
+                ]
+            },
+            {
+                id: "support-analyst",
+                title: "Analista de Suporte",
+                company: "Prefeitura",
+                location: "Santo Antônio",
+                sector: "administrativo",
+                description: "Buscamos um analista de suporte para auxiliar os departamentos internos da prefeitura.",
+                requirements: [
+                    "Conhecimentos em sistemas operacionais",
+                    "Boa comunicação",
+                    "Resolução de problemas técnicos"
+                ],
+                benefits: [
+                    "Estabilidade",
+                    "Plano de carreira",
+                    "Benefícios municipais"
+                ]
+            },
+            {
+                id: "ui-ux-designer",
+                title: "Designer UI/UX",
+                company: "Logic Flow",
+                location: "Santo Antônio",
+                sector: "tecnologia",
+                description: "Procuramos um designer criativo para desenvolver interfaces intuitivas e atraentes.",
+                requirements: [
+                    "Domínio em Figma ou Adobe XD",
+                    "Portfólio de projetos",
+                    "Entendimento de design responsivo"
+                ],
+                benefits: [
+                    "Ambiente criativo",
+                    "Trabalho em projetos inovadores",
+                    "Desenvolvimento profissional"
+                ]
+            }
+        ];
+
+        // Render Job Listings
+        function renderJobListings(jobs) {
+            const listingsContainer = document.getElementById('job-listings');
+            listingsContainer.innerHTML = jobs.map(job => `
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+            <h3 class="text-xl font-bold mb-2">${job.title}</h3>
+            <p class="text-gray-600 mb-1">${job.company}</p>
+            <p class="text-gray-500 mb-4">${job.location}</p>
+            <button onclick="openJobApplicationModal('${job.id}')" 
+                    class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
+                Candidatar-se
+            </button>
+        </div>
+    `).join('');
+        }
+
+        // Create Job Application Modal
+        function createJobApplicationModal() {
+            const modalDiv = document.createElement('div');
+            modalDiv.id = 'job-application-modal';
+            modalDiv.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center';
+            modalDiv.innerHTML = `
+        <div class="bg-white rounded-xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h2 id="job-modal-title" class="text-2xl font-bold"></h2>
+                <button onclick="closeJobApplicationModal()" class="text-gray-600 hover:text-gray-900">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="job-modal-details" class="mb-6"></div>
+            
+            <form id="job-application-form" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="full-name" class="block mb-2">Nome Completo</label>
+                        <input type="text" id="full-name" required 
+                               class="w-full px-3 py-2 border rounded-lg">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2">Email</label>
+                        <input type="email" id="email" required 
+                               class="w-full px-3 py-2 border rounded-lg">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="phone" class="block mb-2">Telefone</label>
+                    <input type="tel" id="phone" required 
+                           class="w-full px-3 py-2 border rounded-lg">
+                </div>
+                
+                <div>
+                    <label for="curriculum" class="block mb-2">Currículo (PDF)</label>
+                    <input type="file" id="curriculum" accept=".pdf" required 
+                           class="w-full px-3 py-2 border rounded-lg">
+                </div>
+                
+                <div>
+                    <label for="additional-info" class="block mb-2">Informações Adicionais</label>
+                    <textarea id="additional-info" rows="4" 
+                              class="w-full px-3 py-2 border rounded-lg"></textarea>
+                </div>
+                
+                <button type="submit" 
+                        class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+                    Enviar Candidatura
+                </button>
+            </form>
+        </div>
+    `;
+
+            document.body.appendChild(modalDiv);
+        }
+
+        // Open Job Application Modal
+        function openJobApplicationModal(jobId) {
+            const job = jobListings.find(j => j.id === jobId);
+            const modal = document.getElementById('job-application-modal');
+            const titleElem = document.getElementById('job-modal-title');
+            const detailsElem = document.getElementById('job-modal-details');
+
+            titleElem.textContent = job.title;
+            detailsElem.innerHTML = `
+        <div class="mb-4">
+            <h3 class="font-bold text-lg mb-2">Descrição</h3>
+            <p>${job.description}</p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div>
+                <h3 class="font-bold text-lg mb-2">Requisitos</h3>
+                <ul class="list-disc pl-5">
+                    ${job.requirements.map(req => `<li>${req}</li>`).join('')}
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-lg mb-2">Benefícios</h3>
+                <ul class="list-disc pl-5">
+                    ${job.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
+                </ul>
+            </div>
+        </div>
+    `;
+
+            modal.classList.remove('hidden');
+
+            // Form submission handler
+            const form = document.getElementById('job-application-form');
+            form.onsubmit = function (e) {
+                e.preventDefault();
+                alert('Candidatura enviada com sucesso! Entraremos em contato em breve.');
+                closeJobApplicationModal();
+            };
+        }
+
+        // Close Job Application Modal
+        function closeJobApplicationModal() {
+            const modal = document.getElementById('job-application-modal');
+            modal.classList.add('hidden');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderJobListings(jobListings);
+            createJobApplicationModal();
+
+            // Previous event listeners
+            document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            document.getElementById('job-search').addEventListener('input', filterJobs);
+            document.getElementById('job-filter').addEventListener('change', filterJobs);
+        });
+
+        // Search and Filter Function
+        function filterJobs() {
+            const searchTerm = document.getElementById('job-search').value.toLowerCase();
+            const sector = document.getElementById('job-filter').value;
+
+            const filteredJobs = jobListings.filter(job =>
+                job.title.toLowerCase().includes(searchTerm) &&
+                (sector === '' || job.sector === sector)
+            );
+
+            renderJobListings(filteredJobs);
+        }
+    </script>
+</body>
+
+</html>

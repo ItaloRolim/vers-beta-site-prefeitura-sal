@@ -1,0 +1,28 @@
+/* Estilos para o tema escuro */
+.dark body {
+    background-color: #1a202c;
+    color: #000000;
+}
+
+.dark .bg-primary,
+.dark .submenu {
+    background-color: #252d41;
+}
+
+.dark .text-black,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark span,
+.dark a {
+    color: #6d6d6d !important;
+    /* Mantém o texto escuro */
+}
+
+.dark .submenu a {
+    color: #000;
+}

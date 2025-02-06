@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Municipal Santo Antônio dos Lopes</title>
+    <link rel="shortcut icon" href="../../imagens/favicon-sal.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <!-- Logo -->
+                <div class="flex items-center flex-shrink-0 px-4">
+                    <img src="../../imagens/logo.png" alt="Prefeitura Municipal" class="h-20 w-auto object-contain">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="../../home/index.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-home w-5 mr-1 text-black"></i> Início</a></li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../../prefeitura/prefeito/prefeito.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Prefeita
+                                    e Vice</a>
+                                <a href="../../prefeitura/secretarias/secretarias.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Secretarias</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-city w-5 mr-1 text-black"></i>Município
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../../municipio/cidade/cidade.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Cidade</a>
+                                <a href="../../municipio/obras/obras.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Obras</a>
+                                <a href="../../municipio/veiculos/veiculos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Veículos</a>
+                                <a href="../../municipio/simbolos/simbolos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Símbolos</a>
+                                <a href="../../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Dados
+                                    do Município</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Contra
+                                    Cheque Online</a>
+                                <a href="../../diariooficial/diario.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Diário
+                                    Eletrônico</a>
+                                <a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Nota
+                                    Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+
+                        <li><a href="../../diariooficial/diario.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+
+                        <li><a href="../../porta-transparencia/transparencia.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+
+                        <li><a href="../../e-sic/e-sic.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                        <li><a href="../../ouvidoria/ouvidoria.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                        <li><a href="/site-santo-antonio-dos-lopes/pesquisa"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-black focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-black"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none mb-4">
+                    <i class="fas fa-times text-2xl text-black"></i>
+                </button>
+                <ul class="space-y-2">
+                    <li><a href="../../home/index.html" class="text-black block py-2"><i
+                                class="fas fa-home w-5 mr-1 text-black"></i>
+                            Início</a></li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../../prefeitura/prefeito/prefeito.html" class="text-black block py-2">Prefeita
+                                    e
+                                    Vice</a></li>
+                            <li><a href="../../prefeitura/secretarias/secretarias.html"
+                                    class="text-black block py-2">Secretarias</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-city w-5 mr-1 text-black"></i>Município</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../../municipio/cidade/cidade.html" class="text-black block py-2">A Cidade</a>
+                            </li>
+                            <li><a href="../../municipio/obras/obras.html" class="text-black block py-2">Obras</a></li>
+                            <li><a href="../../municipio/veiculos/veiculos.html"
+                                    class="text-black block py-2">Veículos</a>
+                            </li>
+                            <li><a href="../../municipio/simbolos/simbolos.html"
+                                    class="text-black block py-2">Símbolos</a>
+                            </li>
+                            <li><a href="../../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="text-black block py-2">Dados do Município</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank" class="text-black block py-2">Contra Cheque Online</a></li>
+                            <li><a href="../diariooficial/diario.html" class="text-black block py-2">Diário
+                                    Eletrônico</a></li>
+                            <li><a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank" class="text-black block py-2">Nota Fiscal Eletrônica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../diariooficial/diario.html" class="text-black block py-2"><i
+                                class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+                    <li><a href="../../porta-transparencia/transparencia.html" class="text-black block py-2"><i
+                                class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+                    <li><a href="../../e-sic/e-sic.html" class="text-black block py-2"><i
+                                class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                    <li><a href="../../ouvidoria/ouvidoria.html" class="text-black block py-2"><i
+                                class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/pesquisa" class="text-black block py-2"><i
+                                class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main class="mt-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+        <!-- Sobre a LGPD -->
+        <section
+            class="bg-white rounded-xl shadow-xl p-6 md:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100">
+            <div class="flex flex-col items-center text-center">
+                <!-- Icon Container -->
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 8a2 2 0 11-2 2 2 2 0 012-2zm1 4h-2v4h2zm-2 4h2v2h-2z" />
+                    </svg>
+                </div>
+
+                <!-- Title with Gradient -->
+                <h1 class="text-2xl md:text-3xl font-bold mb-4 text-black">
+                    Entenda a LGPD
+                </h1>
+
+                <!-- Decorative Line -->
+                <div class="w-24 h-1 bg-pink-600 rounded-full mb-6"></div>
+
+                <!-- Subtitle with Icon -->
+                <div class="flex items-center justify-center space-x-2 text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4m0 4h.01M4.929 19.071a10 10 0 1114.142 0A9.955 9.955 0 0112 22a9.955 9.955 0 01-7.071-2.929z" />
+                    </svg>
+                    <p class="text-base md:text-lg">
+                        Sua Privacidade e Segurança São Prioridades
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-white  shadow-lg px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+            <!-- Cabeçalho -->
+            <div class="text-center p-6 lg:p-8 mb-8">
+                <h1 class="text-2xl lg:text-3xl font-bold text-black-900 mb-4 bg-pink-200">Lei Geral de Proteção de
+                    Dados - LGPD</h1>
+                <p class="text-base lg:text-lg text-gray-600">
+                    A Lei nº 13.709/2018 (LGPD) estabelece regras sobre coleta, armazenamento, tratamento e
+                    compartilhamento de dados pessoais no Brasil.
+                </p>
+            </div>
+
+            <!-- Alerta Importante -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mx-6 lg:mx-8 mb-8">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <p class="ml-3 text-blue-900">
+                        Vigente desde setembro de 2020, com sanções aplicáveis a partir de agosto de 2021.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Grid Principal -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 px-6 lg:px-8">
+                <!-- Coluna 1 -->
+                <div class="space-y-6">
+                    <!-- Objetivos -->
+                    <div class="bg-blue-100 p-6 rounded-xl">
+                        <h2 class="text-xl font-semibold text-blue-900 mb-4 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Objetivos Principais
+                        </h2>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                Proteger os direitos fundamentais de liberdade e privacidade
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                Estabelecer regras claras sobre tratamento de dados pessoais
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                Promover o desenvolvimento tecnológico e a inovação
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                                Garantir a livre iniciativa e a livre concorrência
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Direitos dos Titulares -->
+                    <div class="bg-green-100 p-6 rounded-xl">
+                        <h2 class="text-xl font-semibold text-green-900 mb-4 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 4v16m8-8H4" />
+                            </svg>
+                            Direitos dos Titulares
+                        </h2>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                Confirmação da existência de tratamento
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                Acesso aos dados
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                Correção de dados incompletos ou desatualizados
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                                Portabilidade dos dados
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coluna 2 -->
+                <div class="space-y-6">
+                    <!-- Princípios -->
+                    <div class="bg-purple-100 p-6 rounded-xl">
+                        <h2 class="text-xl font-semibold text-purple-900 mb-4 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                            Princípios
+                        </h2>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                Finalidade específica e transparência
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                Adequação e necessidade
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                Livre acesso e qualidade dos dados
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                Segurança e prevenção
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>
+                                Não discriminação e responsabilização
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Bases Legais -->
+                    <div class="bg-orange-100 p-6 rounded-xl">
+                        <h2 class="text-xl font-semibold text-orange-900 mb-4 flex items-center">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Bases Legais
+                        </h2>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                                Consentimento do titular
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                                Cumprimento de obrigação legal
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                                Execução de contrato
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                                Legítimo interesse
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seus Direitos -->
+            <div class="max-w-4xl mx-auto px-6 lg:px-8 py-8 lg:py-12">
+                <h3 class="text-2xl lg:text-3xl font-bold text-gray-800  text-center mb-6 bg-pink-200">Seus Direitos
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white shadow-lg rounded-xl border-l-4 border-pink-300 p-6 transform transition hover:scale-105 hover:shadow-2xl">
+                        <div class="text-blue-900 text-xl mb-4">📋</div>
+                        <h4 class="text-xl font-semibold mb-3">Acesso aos Dados</h4>
+                        <p class="text-gray-600">Você tem direito de saber quais dados seus estão sendo tratados</p>
+                    </div>
+                    <div
+                        class="bg-white shadow-lg rounded-xl border-l-4 border-pink-300 p-6 transform transition hover:scale-105 hover:shadow-2xl">
+                        <div class="text-blue-900 text-xl mb-4">✏️</div>
+                        <h4 class="text-xl font-semibold mb-3">Correção</h4>
+                        <p class="text-gray-600">Solicite a correção de dados incompletos ou desatualizados</p>
+                    </div>
+                    <div
+                        class="bg-white shadow-lg rounded-xl border-l-4 border-pink-300 p-6 transform transition hover:scale-105 hover:shadow-2xl">
+                        <div class="text-blue-900 text-xl mb-4">🗑️</div>
+                        <h4 class="text-xl font-semibold mb-3">Exclusão</h4>
+                        <p class="text-gray-600">Peça a exclusão de dados desnecessários ou excessivos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rodapé -->
+            <div class="mt-12 p-8 bg-gray-300 rounded-lg mx-6 lg:mx-8 mb-6">
+                <p class="text-sm text-gray-600 text-center">
+                    Para mais informações sobre a LGPD, consulte o site oficial da ANPD (Autoridade Nacional de
+                    Proteção de Dados) ou entre em contato com nosso DPO (Data Protection Officer).
+                </p>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <footer class="text-black mt-16 py-12" style="background-color: #FF69B4;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div>
+                <img src="../../imagens/logo.png" alt="Prefeitura Municipal" class="h-14 mb-6">
+                <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2 flex-shrink-0"></i> Rua
+                    Principal, 123</p>
+                <p class="flex items-center mb-2"><i class="fas fa-phone mr-2 flex-shrink-0"></i> (00) 1234-5678</p>
+                <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2 flex-shrink-0"></i>
+                    contato@prefeitura.gov.br</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/prefeiturasal/?__pwa=1" target="_blank"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 576 512">
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="mt-4 text-sm">
+                    © 2025 Prefeitura Municipal de Santo Antonio dos Lopes.
+                    Todos os Direitos Reservados.
+                </p>
+            </div>
+            <div>
+                <h3
+                    class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-green-600">
+                    Links Úteis</h3>
+                <ul class="space-y-2">
+                    <li><a href="../../porta-transparencia/transparencia.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Portal da
+                            Transparência</a>
+                    </li>
+                    <li><a href="../../diariooficial/diario.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Diário Oficial</a></li>
+                    <li><a href="../../portal-licitações/avisos-licitações.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Licitações</a></li>
+                    <li><a href="../../ouvidoria/ouvidoria.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3
+                    class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-green-600">
+                    Horário de Atendimento</h3>
+                <p class="mb-2">Segunda a Sexta</p>
+                <p class="mb-2">08:00 às 17:00</p>
+                <p class="mb-4">Exceto feriados</p>
+                <a href="../../ouvidoria/ouvidoria.html"
+                    class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-yellow-500">Fale
+                    Conosco</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../../js/menu.js"></script>
+    <script src="../../tailwind.config.js"></script>
+
+</body>
+
+</html>

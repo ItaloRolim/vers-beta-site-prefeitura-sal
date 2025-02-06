@@ -1,0 +1,29 @@
+/*  Banner do portal de traparência no home */
+<style>
+.transparency-banner-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.transparency-banner {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.transparency-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.transparency-banner a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+</style>

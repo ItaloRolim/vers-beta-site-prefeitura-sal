@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Municipal Santo Antônio dos Lopes</title>
+    <link rel="shortcut icon" href="../imagens/favicon-sal.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <!-- Logo -->
+                <div class="flex items-center flex-shrink-0 px-4">
+                    <img src="../imagens/logo.png" alt="Prefeitura Municipal" class="h-20 w-auto object-contain">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="../home/index.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-home w-5 mr-1 text-black"></i> Início</a></li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../prefeitura/prefeito/prefeito.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Prefeita
+                                    e Vice</a>
+                                <a href="../prefeitura/secretarias/secretarias.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Secretarias</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-city w-5 mr-1 text-black"></i>Município
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../municipio/cidade/cidade.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Cidade</a>
+                                <a href="../municipio/obras/obras.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Obras</a>
+                                <a href="../municipio/veiculos/veiculos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Veículos</a>
+                                <a href="../municipio/simbolos/simbolos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Símbolos</a>
+                                <a href="../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Dados
+                                    do Município</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Contra
+                                    Cheque Online</a>
+                                <a href="../diariooficial/diario.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Diário
+                                    Eletrônico</a>
+                                <a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Nota
+                                    Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+
+                        <li><a href="../diariooficial/diario.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+
+                        <li><a href="../porta-transparencia/transparencia.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+
+                        <li><a href="../e-sic/e-sic.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                        <li><a href="../ouvidoria/ouvidoria.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                        <li><a href="/site-santo-antonio-dos-lopes/pesquisa"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-black focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-black"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none mb-4">
+                    <i class="fas fa-times text-2xl text-black"></i>
+                </button>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-black block py-2"><i
+                                class="fas fa-home w-5 mr-1 text-black"></i>
+                            Início</a></li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../prefeitura/prefeito/prefeito.html" class="text-black block py-2">Prefeita e
+                                    Vice</a></li>
+                            <li><a href="../prefeitura/secretarias/secretarias.html"
+                                    class="text-black block py-2">Secretarias</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-city w-5 mr-1 text-black"></i>Município</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../municipio/cidade/cidade.html" class="text-black block py-2">A Cidade</a>
+                            </li>
+                            <li><a href="../municipio/obras/obras.html" class="text-black block py-2">Obras</a></li>
+                            <li><a href="../municipio/veiculos/veiculos.html" class="text-black block py-2">Veículos</a>
+                            </li>
+                            <li><a href="../municipio/simbolos/simbolos.html" class="text-black block py-2">Símbolos</a>
+                            </li>
+                            <li><a href="../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="text-black block py-2">Dados do Município</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank" class="text-black block py-2">Contra Cheque Online</a></li>
+                            <li><a href="../diariooficial/diario.html" class="text-black block py-2">Diário
+                                    Eletrônico</a></li>
+                            <li><a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank" class="text-black block py-2">Nota Fiscal Eletrônica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../diariooficial/diario.html" class="text-black block py-2"><i
+                                class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+                    <li><a href="../porta-transparencia/transparencia.html" class="text-black block py-2"><i
+                                class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+                    <li><a href="../e-sic/e-sic.html" class="text-black block py-2"><i
+                                class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                    <li><a href="../ouvidoria/ouvidoria.html" class="text-black block py-2"><i
+                                class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/pesquisa" class="text-black block py-2"><i
+                                class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-full max-w-6xl mx-auto px-4 sm:px-6 overflow-x-hidden">
+        <!-- Header Section -->
+        <div
+            class="bg-white rounded-2xl shadow-lg transform hover:scale-[1.02] transition-all duration-300 my-8 mx-auto max-w-4xl">
+            <div class="bg-gradient-to-r from-white-600 to-pink-600 rounded-t-2xl p-4 sm:p-6">
+                <h1
+                    class="text-2xl sm:text-3xl md:text-4xl text-black font-bold mb-4 flex flex-wrap items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-white opacity-90">
+                        <path d="m14 14-8.5 8.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L11 11" />
+                        <path d="m16 16 6-6" />
+                        <path d="m8 8 6-6" />
+                        <path d="m9 7 8 8" />
+                        <path d="m21 11-8-8" />
+                    </svg>
+                    <span class="break-words p-4">Portal da Transparência / Licitações / Avisos de Licitaões /
+                        Detalhes</span>
+                </h1>
+                <div class="bg-pink-600 backdrop-blur-sm rounded-xl p-4 text-white">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-info-circle text-xl"></i>
+                        <span class="text-sm md:text-base">
+                            Em atendimento à medida provisória nº 896 de 6 de setembro de 2019
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-8">
+            <h1 class="text-2xl sm:text-3xl text-gray-700 font-medium mb-4">Portal de Licitações</h1>
+            <div class="bg-pink-50 p-4 sm:p-6 rounded-xl border border-pink-100 shadow-sm">
+                <h2 class="text-lg sm:text-xl text-pink-600 font-semibold break-words">
+                    INEXIGIBILIDADE Nº 016/2024, TIPO: NENHUM, Exercício: 2024 - FECHADA
+                </h2>
+            </div>
+        </div>
+
+        <!-- Tabs Navigation - Scrollable on mobile -->
+        <div class="border-b border-gray-200 mb-8 overflow-x-auto">
+            <nav class="flex whitespace-nowrap min-w-full sm:min-w-0">
+                <button onclick="showTab('info')"
+                    class="tab-btn pb-4 px-4 border-b-2 border-pink-600 text-pink-600 flex-shrink-0" data-tab="info">
+                    INFORMAÇÕES
+                </button>
+                <button onclick="showTab('additional')"
+                    class="tab-btn pb-4 px-4 text-gray-500 hover:text-pink-600 border-b-2 border-transparent flex-shrink-0"
+                    data-tab="additional">
+                    INFORMAÇÕES ADICIONAIS
+                </button>
+                <button onclick="showTab('progress')"
+                    class="tab-btn pb-4 px-4 text-gray-500 hover:text-pink-600 border-b-2 border-transparent flex-shrink-0"
+                    data-tab="progress">
+                    ANDAMENTO
+                </button>
+            </nav>
+        </div>
+
+        <!-- Tab Contents -->
+        <div id="info" class="tab-content">
+            <div class="bg-white rounded-xl shadow-sm p-4 sm:p-6">
+                <h3 class="text-lg sm:text-xl text-gray-800 font-medium mb-6">Informações da Licitação</h3>
+                <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-3">
+                        <div class="w-full sm:w-24 text-gray-500">Tipo:</div>
+                        <div class="flex-1 font-medium">NENHUM</div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-3">
+                        <div class="w-full sm:w-24 text-gray-500">Local:</div>
+                        <div class="flex-1 font-medium">Praça Abraão Ferreira</div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-3">
+                        <div class="w-full sm:w-24 text-gray-500">Objeto:</div>
+                        <div class="flex-1 font-medium break-words">
+                            Contratação de profissional do setor artístico, qual seja, RENANZIN PRESSÃO.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Info Tab -->
+        <div id="additional" class="tab-content hidden">
+            <div class="bg-white rounded-xl shadow-sm p-4 sm:p-6">
+                <h3 class="text-lg sm:text-xl text-gray-800 font-medium mb-4 sm:mb-6">Informações Adicionais</h3>
+                <div class="space-y-4">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-3">
+                        <div class="w-full sm:w-24 text-gray-500">Valor:</div>
+                        <div class="font-medium">R$ 50.000,00</div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-3">
+                        <div class="w-full sm:w-24 text-gray-500">Duração:</div>
+                        <div class="font-medium">2 horas de show</div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:space-x-3">
+                        <div class="w-full sm:w-24 text-gray-500">Contato:</div>
+                        <div class="font-medium">Secretaria Municipal de Cultura</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Tab -->
+        <div id="progress" class="tab-content hidden">
+            <div class="bg-white rounded-xl shadow-sm p-4 sm:p-6">
+                <h3 class="text-lg sm:text-xl text-gray-800 font-medium mb-4 sm:mb-6">Andamento do Processo</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-3 h-3 bg-green-500 rounded-full flex-shrink-0"></div>
+                        <div>
+                            <p class="font-medium">Processo Iniciado</p>
+                            <p class="text-sm text-gray-500">01/01/2024</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-3 h-3 bg-green-500 rounded-full flex-shrink-0"></div>
+                        <div>
+                            <p class="font-medium">Documentação Aprovada</p>
+                            <p class="text-sm text-gray-500">05/01/2024</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-3 h-3 bg-yellow-500 rounded-full flex-shrink-0"></div>
+                        <div>
+                            <p class="font-medium">Em Análise Final</p>
+                            <p class="text-sm text-gray-500">Em andamento</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Files Section -->
+        <div class="mt-8 bg-white rounded-xl shadow-sm p-4 sm:p-6">
+            <h3 class="text-lg sm:text-xl text-gray-800 font-medium mb-6">Arquivos disponíveis</h3>
+            <div class="border rounded-lg overflow-x-auto">
+                <div class="min-w-full">
+                    <!-- Título das colunas -->
+                    <div class="grid grid-cols-2 p-4 bg-gray-50 border-b">
+                        <div class="font-medium text-gray-600">Descrição</div>
+                        <div class="font-medium text-gray-600">Arquivo</div>
+                    </div>
+                    <!-- Linha de arquivos -->
+                    <div class="grid grid-cols-2 p-4">
+                        <div>INEX_16</div>
+                        <div>
+                            <a href="https://www.stoantoniodoslopes.ma.gov.br/uploads/avisos/2024/08/359-1724265590.pdf"
+                                target="_blank"
+                                class="text-pink-600 hover:text-pink-700 hover:underline flex items-center space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                                </svg>
+                                <span>PDF</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Print Button -->
+        <div class="mt-6 flex justify-end">
+            <button
+                class="flex items-center space-x-2 bg-pink-600 text-white px-4 py-2 rounded-lg hover:bg-pink-700 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M4 4a2 2 0 012-2h8a2 2 0 012 2v2h2a2 2 0 012 2v6a2 2 0 01-2 2h-3v-2a1 1 0 00-1-1H7a1 1 0 00-1 1v2H3a2 2 0 01-2-2V8a2 2 0 012-2h2V4zm8 4H8v2h4V8zm1 8h2v-2h-2v2z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span>Imprimir</span>
+            </button>
+        </div>
+    </main>
+
+    <footer class="text-black mt-16 py-12" style="background-color: #FF69B4;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div>
+                <img src="../imagens/logo.png" alt="Prefeitura Municipal" class="h-14 mb-6">
+                <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2 flex-shrink-0"></i> Rua
+                    Principal, 123</p>
+                <p class="flex items-center mb-2"><i class="fas fa-phone mr-2 flex-shrink-0"></i> (00) 1234-5678</p>
+                <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2 flex-shrink-0"></i>
+                    contato@prefeitura.gov.br</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/prefeiturasal/?__pwa=1" target="_blank"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 576 512">
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="mt-4 text-sm">
+                    © 2025 Prefeitura Municipal de Santo Antonio dos Lopes.
+                    Todos os Direitos Reservados.
+                </p>
+            </div>
+            <div>
+                <h3
+                    class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-green-600">
+                    Links Úteis</h3>
+                <ul class="space-y-2">
+                    <li><a href="../porta-transparencia/transparencia.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Portal da
+                            Transparência</a>
+                    </li>
+                    <li><a href="../diariooficial/diario.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Diário Oficial</a></li>
+                    <li><a href="../portal-licitações/avisos-licitações.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Licitações</a></li>
+                    <li><a href="../ouvidoria/ouvidoria.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3
+                    class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-green-600">
+                    Horário de Atendimento</h3>
+                <p class="mb-2">Segunda a Sexta</p>
+                <p class="mb-2">08:00 às 17:00</p>
+                <p class="mb-4">Exceto feriados</p>
+                <a href="../ouvidoria/ouvidoria.html"
+                    class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-yellow-500">Fale
+                    Conosco</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // Remove active state from all tabs
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            tabButtons.forEach(button => {
+                button.classList.remove('border-pink-600', 'text-pink-600');
+                button.classList.add('border-transparent', 'text-gray-500');
+            });
+
+            // Show selected tab content
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.classList.remove('hidden');
+
+            // Add active state to selected tab
+            const activeButton = document.querySelector(`[data-tab="${tabId}"]`);
+            activeButton.classList.remove('border-transparent', 'text-gray-500');
+            activeButton.classList.add('border-pink-600', 'text-pink-600');
+        }
+
+        // Initialize first tab as active
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('info');
+        });
+    </script>
+
+    <script src="../js/menu.js"></script>
+    <script src="../tailwind.config.js"></script>
+
+</body>
+
+</html>

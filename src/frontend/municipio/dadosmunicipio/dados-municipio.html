@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefeitura de Municipal Santo Antônio dos Lopes</title>
+    <link rel="shortcut icon" href="../../imagens/favicon-sal.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/menu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="bg-primary fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-24">
+                <!-- Logo -->
+                <div class="flex items-center flex-shrink-0 px-4">
+                    <img src="../../imagens/logo.png" alt="Prefeitura Municipal" class="h-20 w-auto object-contain">
+                </div>
+                <nav class="hidden lg:flex flex-1 justify-center">
+                    <ul class="flex space-x-1">
+                        <li><a href="../../home/index.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-home w-5 mr-1 text-black"></i> Início</a></li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../../prefeitura/prefeito/prefeito.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Prefeita
+                                    e Vice</a>
+                                <a href="../../prefeitura/secretarias/secretarias.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Secretarias</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-city w-5 mr-1 text-black"></i>Município
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="../../municipio/cidade/cidade.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Cidade</a>
+                                <a href="../../municipio/obras/obras.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Obras</a>
+                                <a href="../../municipio/veiculos/veiculos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Veículos</a>
+                                <a href="../../municipio/simbolos/simbolos.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Símbolos</a>
+                                <a href="../../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Dados
+                                    do Município</a>
+                            </div>
+                        </li>
+
+                        <li class="relative group">
+                            <button
+                                class="submenu-toggle text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12">
+                                <i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços
+                                <i class="fas fa-chevron-down ml-1 transition-transform duration-300 text-black"></i>
+                            </button>
+                            <div
+                                class="submenu absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
+                                <a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Contra
+                                    Cheque Online</a>
+                                <a href="../../diariooficial/diario.html"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Diário
+                                    Eletrônico</a>
+                                <a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-light hover:text-pink-500">Nota
+                                    Fiscal Eletrônica</a>
+                            </div>
+                        </li>
+
+                        <li><a href="../../diariooficial/diario.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+
+                        <li><a href="../../porta-transparencia/transparencia.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+
+                        <li><a href="../../e-sic/e-sic.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                        <li><a href="../../ouvidoria/ouvidoria.html"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                        <li><a href="/site-santo-antonio-dos-lopes/pesquisa"
+                                class="text-black hover:bg-white/20 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out flex items-center h-12"><i
+                                    class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                    </ul>
+                </nav>
+                <button id="menu-toggle" class="lg:hidden text-black focus:outline-none">
+                    <i class="fas fa-bars text-2xl text-black"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu"
+            class="lg:hidden fixed inset-y-0 right-0 w-64 bg-primary shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+            <div class="p-4">
+                <button id="close-menu" class="text-black focus:outline-none mb-4">
+                    <i class="fas fa-times text-2xl text-black"></i>
+                </button>
+                <ul class="space-y-2">
+                    <li><a href="../../home/index.html" class="text-black block py-2"><i
+                                class="fas fa-home w-5 mr-1 text-black"></i>
+                            Início</a></li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-building w-5 mr-1 text-black"></i>Prefeitura</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../../prefeitura/prefeito/prefeito.html" class="text-black block py-2">Prefeita
+                                    e
+                                    Vice</a></li>
+                            <li><a href="../../prefeitura/secretarias/secretarias.html"
+                                    class="text-black block py-2">Secretarias</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-city w-5 mr-1 text-black"></i>Município</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="../../municipio/cidade/cidade.html" class="text-black block py-2">A Cidade</a>
+                            </li>
+                            <li><a href="../../municipio/obras/obras.html" class="text-black block py-2">Obras</a></li>
+                            <li><a href="../../municipio/veiculos/veiculos.html"
+                                    class="text-black block py-2">Veículos</a>
+                            </li>
+                            <li><a href="../../municipio/simbolos/simbolos.html"
+                                    class="text-black block py-2">Símbolos</a>
+                            </li>
+                            <li><a href="../../municipio/dadosmunicipio/dados-municipio.html"
+                                    class="text-black block py-2">Dados do Município</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button
+                            class="submenu-toggle text-black block py-2 w-full text-left flex items-center justify-between">
+                            <span><i class="fas fa-hands-helping w-5 mr-1 text-black"></i> Serviços</span>
+                            <i class="fas fa-chevron-down transition-transform duration-300 text-black"></i>
+                        </button>
+                        <ul class="submenu pl-4 hidden">
+                            <li><a href="http://servico.stoantoniodoslopes.ma.gov.br:8080/sipweb/trabalhador/login/login.xhtml"
+                                    target="_blank" class="text-black block py-2">Contra Cheque Online</a></li>
+                            <li><a href="../diariooficial/diario.html" class="text-black block py-2">Diário
+                                    Eletrônico</a></li>
+                            <li><a href="https://stm.salopes.d2ti.com.br/portalPrefeitura/jsp/principal/principal.jsf"
+                                    target="_blank" class="text-black block py-2">Nota Fiscal Eletrônica</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../../diariooficial/diario.html" class="text-black block py-2"><i
+                                class="far fa-newspaper w-5 mr-1 text-black"></i> Diário Oficial</a></li>
+                    <li><a href="../../porta-transparencia/transparencia.html" class="text-black block py-2"><i
+                                class="fas fa-chart-line w-5 mr-1 text-black"></i> Transparência</a></li>
+                    <li><a href="../../e-sic/e-sic.html" class="text-black block py-2"><i
+                                class="fas fa-info-circle w-5 mr-1 text-black"></i> E-Sic</a></li>
+                    <li><a href="../../ouvidoria/ouvidoria.html" class="text-black block py-2"><i
+                                class="fas fa-comments w-5 mr-1 text-black"></i> Ouvidoria</a></li>
+                    <li><a href="/site-santo-antonio-dos-lopes/pesquisa" class="text-black block py-2"><i
+                                class="fas fa-search w-5 mr-1 text-black"></i> Pesquisa</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+        <!-- Header Section -->
+        <section
+            class="bg-white rounded-xl shadow-xl p-6 md:p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100">
+            <div class="flex flex-col items-center text-center">
+                <!-- Icon Container -->
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                </div>
+
+                <!-- Title with Gradient -->
+                <h1 class="text-2xl md:text-3xl font-bold mb-4 text-black">
+                    Dados do Município
+                </h1>
+
+                <!-- Decorative Line -->
+                <div class="w-24 h-1 bg-pink-600 rounded-full mb-6"></div>
+
+                <!-- Subtitle with Icon -->
+                <div class="flex items-center justify-center space-x-2 text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                    <p class="text-base md:text-lg">
+                        Descubra as Origens e Trajetória de Nossa Cidade
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">História</h2>
+                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-600 mb-4">No ano de 1922, Antônio Pereira Lopes, querendo se livrar da seca que
+                        assolava o vizinho Estado
+                        do Piauí, mais precisamente a sua cidade de São Pedro, e na esperança de encontrar no solo das
+                        matas virgens terras férteis para sustento e melhoria de vida, chegou na região maranhense
+                        chamada, na época, de Alto Mearim. Esse lugar ainda era desconhecido e desabitado. Antônio
+                        Pereira Lopes e seus familiares, inicialmente, se fixaram na localidade que depois se tornaria o
+                        povoado de Lagoa Nova.</p>
+
+                    <p class="text-gray-600 mb-4">Esse valoroso descobridor, desbravador por natureza, iniciou seus
+                        trabalhos desenvolvendo
+                        atividades de lavrador, cultivando arroz, feijão, milho e, nas horas de folga, dedicando-se à
+                        caça. Ele abriu caminhos que mais tarde foram transformados em estradas, ligando diversos pontos
+                        circunvizinhos. Em uma dessas investidas, Antônio Pereira Lopes, juntamente com seus três filhos
+                        — Evaristo Lopes, Antonio Filho e Libânio Lopes — e o amigo Antonio Laborão, encontrou o local
+                        do futuro povoado, posteriormente chamado de Santo Antônio dos Lopes. A fundação do povoado
+                        ocorreu em 21 de julho de 1922, liderada pelos cinco corajosos piauienses.</p>
+
+                    <p class="text-gray-600 mb-4">A origem do nome "Santo Antônio dos Lopes" está ligada ao seu
+                        fundador, Antônio, e ao santo de
+                        mesmo nome, considerado seu protetor. Assim, o povoado foi definitivamente denominado Santo
+                        Antônio dos Lopes, localizado nas terras do município de Pedreiras, no Estado do Maranhão. Já na
+                        condição de distrito de Pedreiras, Santo Antônio dos Lopes foi desmembrado do município e
+                        elevado à condição de município pelo Decreto-Lei nº 2.179, de 30 de dezembro de 1961, do
+                        Governador Newton de Barros Bello, com emancipação legal em 16 de janeiro de 1962.</p>
+
+                    <p class="text-gray-600 mb-4">Com uma área de 712 km², Santo Antônio dos Lopes possui os seguintes
+                        limites municipais: ao
+                        norte, Pedreiras e Lima Campos; ao sul, Dom Pedro; a leste, Codó e Dom Pedro; e a oeste,
+                        Joselândia, Presidente Dutra e Dom Pedro. Suas terras são do tipo massapé. Embora não possua
+                        rio, os povoados "Pacas" e "Marianópolis" são banhados pelo Rio Mearim, enquanto os demais são
+                        abastecidos por açudes, poços artesianos e igarapés temporários, sendo os mais importantes
+                        "Marimbondo" e "Insono".</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Geografia</h2>
+                    <p class="text-gray-600 mb-4">Área: 712 km²</p>
+                    <p class="text-gray-600 mb-4">Limites: Pedreiras e Lima Campos (norte), Dom Pedro (sul), Codó e Dom
+                        Pedro (leste), Joselândia, Presidente Dutra e Dom Pedro (oeste)</p>
+                    <p class="text-gray-600 mb-4">Tipo de solo: Massapé</p>
+                    <p class="text-gray-600 mb-4">Hidrografia: Os povoados "Pacas" e "Marianópolis" são banhados pelo
+                        Rio Mearim. Os demais são servidos por açudes, poços artesianos e igarapés temporários, sendo os
+                        mais importantes "marimbondo" e "Insono".</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Economia</h2>
+                    <p class="text-gray-600 mb-4">Inicialmente baseada na agricultura familiar de arroz, milho e feijão;
+                        na produção de cachaça e comércio de bens e serviços.</p>
+                    <p class="text-gray-600 mb-4">Atualmente, a economia ganhou novo impulso com o estabelecimento do
+                        Complexo Termelétrico Parnaíba.</p>
+                    <p class="text-gray-600 mb-4">Em 2014, Santo Antonio dos Lopes já possuía PIB de R$ 830.654,00,
+                        destacando-se como a 11ª economia do estado.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Clima</h2>
+                    <p class="text-gray-600 mb-4">Clima quente e úmido, com apenas duas estações:</p>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Inverno: de dezembro a maio</li>
+                        <li>Verão: de junho a novembro</li>
+                    </ul>
+                    <p class="text-gray-600 mb-4">Temperatura varia entre 25 e 33 graus.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Cidadãos Notáveis</h2>
+                    <p class="text-gray-600 mb-4">
+                        Antonio Pereira Lopes, fundador do povoado que lhe deu origem; <br>
+                        Durval Januário dos Santos, primeiro prefeito (nomeado pelo Governador Newton de Barros Bello);
+                        <br>
+                        Antonio da Silva Rocha, primeiro prefeito eleito; <br>
+                        Galdino Ribeiro, fundador da primeira capela da cidade, dedicada à Virgem da Conceição; <br>
+                        Laonoa, a primeira parteira leiga; <br>
+                        Georgina Joana de Oliveira (Janoca), a primeira professora do município; <br>
+                        Edward Santos, renomado colaborador da educação santoantoense; <br>
+                        Francisca Sena, grande colaboradora da cultura local.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Gestores Municipais</h2>
+                    <p class="text-gray-600 mb-4">
+                        Durval Januário dos Santos, de 16/01/1962 a 14/03/1963; <br>
+                        Antonio da Silva Rocha, de 15/03/1963 a 14/03/1969; <br>
+                        Antonio Pereira Leal, de 15/03/1969 a 14/03/1973; <br>
+                        Raimundo Palma Lopes, de 15/03/1973 a 14/03/1977; <br>
+                        Antonio Pereira Leal, de 15/02/1977 a 31/01/1983; <br>
+                        Raimundo Quinco de Lima Filho, de 01/02/1983 a 31/12/1988; <br>
+                        Alzira Barros de Melo, de 01/01/1989 a 31/12/1992; <br>
+                        Renato Abreu Cavalcante, de 01/01/1993 a 31/12/1996; <br>
+                        Euzébio Napoleão Mendonça, de 01/01/1997 a 31/12/2004; <br>
+                        Raimundo Quinco de Lima Filho, de 01/01/2005 a 31/12/2008; <br>
+                        Eunélio Macedo Mendonça, de 01/01/2009 a 31/12/2016; <br>
+                        Emanuel Lima de Oliveira, de 01/01/2017 a 31/12/2024; <br>
+                        Cibelle Napoleão, é o atual prefeita, em seu primeiro mandato.
+                    </p>
+                </div>
+
+        </section>
+
+        <section>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Cultura</h2>
+                    <p class="text-gray-600 mb-4">Festejo do Bairro Santa Madalena
+                        Realizado sempre no final do mês de Maio, o Festejo do Bairro Santa Madalena já faz parte da
+                        agenda junina da cidade. Mesmo que seja um evento de pequeno porte, o festejo atrai muitas
+                        pessoas para o Bairro Santa Madalena durante a sua realização, sempre embelezado com atrações
+                        musicais, comidas típicas e apresentações artísticas organizadas pelos estudantes do município.
+                    </p>
+
+                    <p class="text-gray-600 mb-4">Festejo de Santo Antonio
+                        Festa realizada no mês de junho e organizada pela igreja católica, o Festejo de Santo Antonio já
+                        faz parte da agenda cultural da cidade. Além das missas especiais realizadas na data, após as
+                        celebrações há muita festa e diversão em frente a igreja com leilões e comidas típicas.</p>
+
+                    <p class="text-gray-600 mb-4">Semana da Cultura
+                        Trata-se de um grandioso evento anual que ocorre no período de festas juninas de 23 a 29 de
+                        junho. O maior evento junino da região do cocais atrai turista de todas as cidades da região. Na
+                        semana da cultura a cidade entra em festa 24 horas por dia durante o festival, com atrações
+                        musicais e manifestações culturais de todo o Brasil. As bebidas e comidas tipicas são um
+                        espetáculo à parte tornando a experiencias ainda mais inesquecível.</p>
+
+                    <p class="text-gray-600 mb-4">Os jogos e brincadeiras também jamais podem deixar de serem citados,
+                        dando destaque á corrida de jumento, show de calouros e o concurso das quebradeiras de côco.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="p-8">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Demografia</h2>
+                    <p class="text-gray-600 mb-4">População em 2010: 14.288 habitantes</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="p-6 bg-gray-100">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Compartilhar</h3>
+            <div class="flex space-x-4">
+                <!-- Facebook -->
+                <a href="#" id="facebook-share" target="_blank"
+                    class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Facebook</a>
+                <!-- X (Twitter) -->
+                <a href="#" id="x-share" target="_blank"
+                    class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-800">X</a>
+                <!-- WhatsApp -->
+                <a href="#" id="whatsapp-share" target="_blank"
+                    class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700">WhatsApp</a>
+            </div>
+
+            <script>
+                // Dados da notícia
+                const noticiaTitulo = "Aqui vai o título da notícia";₢
+                const noticiaURL = window.location.href;
+
+                // Links de compartilhamento
+                document.getElementById("facebook-share").href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(noticiaURL)}&t=${encodeURIComponent(noticiaTitulo)}`;
+                document.getElementById("x-share").href = `https://x.com/intent/tweet?url=${encodeURIComponent(noticiaURL)}&text=${encodeURIComponent(noticiaTitulo)}`;
+                document.getElementById("whatsapp-share").href = `https://api.whatsapp.com/send?text=${encodeURIComponent(noticiaTitulo + " " + noticiaURL)}`;
+            </script>
+
+        </div>
+        </article>
+
+    </main>
+
+    <footer class="text-black mt-16 py-12" style="background-color: #FF69B4;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div>
+                <img src="../../imagens/logo.png" alt="Prefeitura Municipal" class="h-14 mb-6">
+                <p class="flex items-center mb-2"><i class="fas fa-map-marker-alt mr-2 flex-shrink-0"></i> Rua
+                    Principal, 123</p>
+                <p class="flex items-center mb-2"><i class="fas fa-phone mr-2 flex-shrink-0"></i> (00) 1234-5678</p>
+                <p class="flex items-center mb-4"><i class="fas fa-envelope mr-2 flex-shrink-0"></i>
+                    contato@prefeitura.gov.br</p>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/prefeiturasal/?__pwa=1" target="_blank"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                        </svg>
+                    </a>
+                    <a href="#"
+                        class="bg-green-600 hover:bg-yellow-500 w-10 h-10 rounded-full flex items-center justify-center transition duration-300 ease-in-out">
+                        <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 576 512">
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="mt-4 text-sm">
+                    © 2025 Prefeitura Municipal de Santo Antonio dos Lopes.
+                    Todos os Direitos Reservados.
+                </p>
+            </div>
+            <div>
+                <h3
+                    class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-green-600">
+                    Links Úteis</h3>
+                <ul class="space-y-2">
+                    <li><a href="../../porta-transparencia/transparencia.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Portal da
+                            Transparência</a>
+                    </li>
+                    <li><a href="../../diariooficial/diario.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Diário Oficial</a></li>
+                    <li><a href="../../portal-licitações/avisos-licitações.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Licitações</a></li>
+                    <li><a href="../../ouvidoria/ouvidoria.html"
+                            class="hover:text-yellow-500 transition duration-300 ease-in-out">Ouvidoria</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3
+                    class="text-xl font-bold mb-6 relative pb-2 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-12 after:h-1 after:bg-green-600">
+                    Horário de Atendimento</h3>
+                <p class="mb-2">Segunda a Sexta</p>
+                <p class="mb-2">08:00 às 17:00</p>
+                <p class="mb-4">Exceto feriados</p>
+                <a href="../ouvidoria/ouvidoria.html"
+                    class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg transition duration-300 ease-in-out hover:bg-yellow-500">Fale
+                    Conosco</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../../js/menu.js"></script>
+    <script src="../../tailwind.config.js"></script>
+
+</body>
+
+</html>
