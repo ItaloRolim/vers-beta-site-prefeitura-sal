@@ -1,4 +1,3 @@
-
 // Seleciona os botões de alternância do tema
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = document.getElementById('theme-icon');
@@ -23,9 +22,9 @@ function setTheme(isDark) {
 // Verifica o tema inicial
 function checkInitialTheme() {
     const savedTheme = localStorage.getItem('theme');
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    if (savedTheme === 'dark' || (savedTheme === null && prefersDarkMode)) {
+    // Sempre inicia com o tema claro, a menos que o usuário tenha salvo como escuro
+    if (savedTheme === 'dark') {
         setTheme(true);
     } else {
         setTheme(false);
