@@ -26,3 +26,11 @@
 .dark .submenu a {
     color: #000;
 }
+
+:root.light {
+    /* variáveis do tema claro */
+}
+
+:root.dark {
+    /* variáveis do tema escuro */
+}
